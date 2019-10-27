@@ -99,7 +99,15 @@ body {
     text-align: center;
 }
 
+.main-content-abs-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-font {
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 1.3rem 2.5rem;

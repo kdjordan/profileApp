@@ -88,7 +88,6 @@ export default {
     justify-content: space-between;
     flex: 0 0 7rem;;
     
-    
     &__logo {
         font-family: var(--logoFont);
         background: var(--color-darkblue);
@@ -106,8 +105,6 @@ export default {
         
         &--type {
             color: var(--color-lightgrey);
-            top: 23%;
-            left: 23%
         }
     }
 
@@ -160,8 +157,6 @@ export default {
             &--icon {
                 margin-left: 3%;
             }
-        }
-
-       
+        }       
 }
 </style>

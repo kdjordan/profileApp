@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <div class="main-content">
+        <div class="main-content-abs-center">
             <h1>My Name is Kevin Jordan.</h1>
             <h3>I design and build things on the Internet.</h3>   
             <div class="large-logo mt-large">
@@ -17,9 +17,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
-
 
 .large-logo {
     display: flex;
