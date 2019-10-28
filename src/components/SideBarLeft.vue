@@ -58,7 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // flex: 0 0 9.2rem;
+    flex:0 0 7rem;
     
 
     &__menu-box {
@@ -70,7 +70,7 @@ export default {
 
         &:hover {
             width: 200%;
-            height: 60%;
+            height: 35%;
             border-bottom-right-radius: 5px;
         }
         &:hover .ham-menu{

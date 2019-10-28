@@ -74,6 +74,9 @@ body {
     font-weight: 400;
     line-height: 1.6;  
     font-size: 1.7rem;
+    height: 100vh;
+    // margin-top: 5vh;
+    
 }
 
 //layout classes
@@ -82,10 +85,9 @@ body {
     background: var(--color-offwhite);  
     display: flex;
     justify-content: space-between;
-    margin: 2.5vh auto;
-    height: 95vh;
-    
+    margin: 0 auto; 
     border-radius: 5px;
+    flex: 1;
     
 }
 
@@ -95,16 +97,12 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--color-darkblue);
-    min-width: 100%;
-    text-align: center;
-    min-width: 0;
-    flex-basis: 0;
-    flex-grow: 1;
+    height: 100vh;
+    // margin: 5vh;
     
     &__between {
-      justify-content: space-around;
-      min-width: 95%;
-      border: 1px solid black;
+      justify-content: space-around; 
+      flex: 1;
     }
 }
 
@@ -118,7 +116,7 @@ body {
   padding: 1.65rem;
  
   color: var(--color-lightgrey);
-  background: var(--color-darkblue);
+  // background: var(--color-darkblue);
   
 }
 

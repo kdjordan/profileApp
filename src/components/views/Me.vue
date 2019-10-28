@@ -1,9 +1,8 @@
 <template>
 <div>
-    <h1 class="header-font">ME</h1>
     <div class="main__between">
             <div class="me">
-                <div class="me__profile-image">
+                <div class="me__image">
                     <img src="../../img/profile.jpg" alt="">
                 </div>
                 <div class="me__code-block">
@@ -90,19 +89,15 @@ export default {
 
 <style lang="scss" scoped>
 
-table {
-    margin: auto;
-    margin-bottom: 10%;
-}
-td {
-    padding: .3rem;
-}
-tbody{
-    font-size: 1.2rem;
-}
+
 
 .me {
-    
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     &__code-block {
         text-align: left;
@@ -110,15 +105,25 @@ tbody{
     }
     
 
-    &__profile-image {
+    &__image {
         text-align: center;
             & img {
             width: 25%;
             border-radius: 50%;
             margin: 10% 0 10% 0;
             border: 6px solid var(--color-darkblue);
-
         }
+    }
+
+    & table {
+    margin: auto;
+    margin-bottom: 10%;
+    }
+    & td {
+        padding: .3rem;
+    }
+    & tbody{
+        font-size: 1.4rem;
     }
   
 }

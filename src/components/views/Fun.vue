@@ -1,7 +1,5 @@
 <template>
     <div class="fun">
-        <div class="main-content-abs-center">
-            <h1 class="header-font">Fun</h1>
             <p>Here are some side projects I've been working on lately.</p>
             <div class="fun__box">
                 <div class="fun__project">
@@ -25,6 +23,11 @@ export default {
 <style lang="scss" scoped>
 
 .fun {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 
     &__box {
         display: flex;

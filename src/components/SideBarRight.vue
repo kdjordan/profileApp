@@ -86,7 +86,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // flex: 0 0 7rem;
+    flex: 0 0 7rem;
     
     &__logo {
         font-family: var(--logoFont);
@@ -121,6 +121,7 @@ export default {
             background: var(--color-lightgrey);
             margin: 2.5rem 0; 
             border-radius: 2px;
+            transition: all .4s;
             
 
         }

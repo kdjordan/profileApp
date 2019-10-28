@@ -1,13 +1,17 @@
 <template>
+<transition name="fade">
     <div class="inner-client">
         <h2>{{ getClient.name }}</h2>
-        <a :href="getClient.link" target="_blank"><img :src="getImage" class="mt-med img"></a>
+        <a :href="getClient.link" target="_blank">
+            <img :src="getImage" :if="show" class="mt-med img" @change="announce">
+        </a>
         <div class="text-center inner-client__details">
             <h3>Work Performed</h3>
             <p class="mt-small mb-med">{{ getClient.work }}</p>
         </div>
         
     </div>
+    </transition>
     <!-- return require(`../../img/${this.$store.state.clients[this.index].img}`) -->
 </template>
 
@@ -17,7 +21,7 @@
     export default {
         data() { 
             return {
-                
+                show: true
             }
         },
         computed: {
@@ -27,22 +31,32 @@
             getImage() {
                return require(`../../img/${this.$store.state.clients[this.$store.state.clientIndex].img}`)
             }
+        },
+        methods: {
+            announce() {
+                console.log('hmmmm');
+            }
         }
-        
     }
 </script>
 
 <style lang="scss" scoped>
+
 
 .inner-client {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    opacity: 1;
+
+    & h2 {
+        margin-top: 20px;
+    }
     
 
     &__details {
-        margin-top: -6.5rem;
+        margin-top: -8.5rem;
     }
 }
 

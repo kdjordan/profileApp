@@ -1,9 +1,11 @@
 <template>
     <div class="main">
+        <div class="home">
             <h1>My Name is Kevin Jordan.</h1>
             <h3>I design and build things on the Internet.</h3>   
             <div class="large-logo mt-large">
                 <span class="large-logo__type">KJ</span>
+            </div>
         </div>
     </div>
 </template>
@@ -15,6 +17,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
 
 .large-logo {
     display: flex;
