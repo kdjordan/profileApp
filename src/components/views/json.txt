@@ -1,0 +1,23 @@
+<pre class="me__code-block">
+                        <code>me_json: {   'name': 'Kevin Jordan',
+                        'education': 'University of Oregon BS CIS',
+                        'certification': 'ITIL Foundation 4',
+                        'workstation': {
+                            'machine': '2018 MacBook Pro 13" i7 16GB 1TB',
+                            'display': 'LG 34-Inch 21:9 Curved UltraWide Monitor',
+                            'IDE' : 'VSCode'
+                        },
+                        'languages': [ 'HTML', 'JavaScript', 'CSS', 'PHP', 'Java' ],
+                        'CSS': [ 'float', 'flexbox', 'grid', 'bootstrap', 'SASS' ],
+                        'JavaScript': {
+                            'description': [ 'ES5', 'ES6', 'VueJS', 'NodeJS', 'jQuery' ],
+                            'tools': [ 'webpack', 'gulp', 'babel' ],
+                        }
+                        'databases': [ 'MongoDB', 'Firebase', 'mySQL' ],
+                        'CMS' : 'WordPress',
+                        'OS': [ 'MacOS', 'Windows', 'Linux' ],
+                        'other_miscell': [ 'Product Photography', 'Adobe Creative Cloud', 'Postman', 'phpMyAdmin' ],
+                        'hobbies': [ 'glass art', 'fitness', 'trail running', 'mtn biking', 'skiing', 'surfing', 'travel' ]
+                    } 
+                        </code>
+                    </pre>

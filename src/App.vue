@@ -143,6 +143,9 @@ body {
 .m-med {
   margin: 2rem 0;
 }
+.u-strong {
+  font-weight: 700;
+}
 .text-center {
   text-align: center;
 }
