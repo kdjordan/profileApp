@@ -12,18 +12,17 @@
 <script>
   import SideBarLeft from './components/SideBarLeft.vue';
   import SideBarRight from './components/SideBarRight.vue';
-  import Welcome from './components/views/Welcome.vue';
+  import Home from './components/views/Home.vue';
   import Clients from './components/views/Clients.vue';
   import Fun from './components/views/Fun.vue';
   import Me from './components/views/Me.vue';
   import Contact from './components/views/Contact.vue';
-  import { mapState } from 'vuex';   
-  
+
   export default {
     components: {
       appSideBarLeft: SideBarLeft,
       appSideBarRight: SideBarRight,
-      appWelcome: Welcome,
+      appHome: Home,
       appClients: Clients,
       appFun: Fun,
       appMe: Me,
@@ -75,8 +74,6 @@ body {
     font-weight: 400;
     line-height: 1.6;  
     font-size: 1.7rem;
-    min-height: 100vh;
-    padding: 5rem;   
 }
 
 //layout classes
@@ -85,32 +82,41 @@ body {
     background: var(--color-offwhite);  
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    min-height: 85vh;
+    margin: 2.5vh auto;
+    height: 95vh;
+    
     border-radius: 5px;
+    
 }
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-darkblue);
-    width: 80%;
+    min-width: 100%;
     text-align: center;
+    min-width: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    
+    &__between {
+      justify-content: space-around;
+      min-width: 95%;
+      border: 1px solid black;
+    }
 }
 
-.main-content-abs-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .header-font {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  padding: 1.3rem 2.5rem;
+  padding: 1.65rem;
+ 
   color: var(--color-lightgrey);
   background: var(--color-darkblue);
   

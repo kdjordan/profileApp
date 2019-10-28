@@ -1,8 +1,8 @@
 <template>
-    <div class="me">
-        <div class="main-content-abs-center">
-            <h1 class="header-font">ME</h1>
-            <div class="me__box">
+<div>
+    <h1 class="header-font">ME</h1>
+    <div class="main__between">
+            <div class="me">
                 <div class="me__profile-image">
                     <img src="../../img/profile.jpg" alt="">
                 </div>
@@ -77,8 +77,9 @@
                     </table>
                 </div>
             </div>
-        </div>
     </div>
+
+</div>
 </template>
 
 <script>
@@ -101,58 +102,25 @@ tbody{
 }
 
 .me {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-
     
-    &__box {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
+
+    &__code-block {
+        text-align: left;
+        margin-left: 15%;
     }
+    
 
     &__profile-image {
         text-align: center;
             & img {
-            width: 30%;
+            width: 25%;
             border-radius: 50%;
-            margin: 10% 0;
+            margin: 10% 0 10% 0;
             border: 6px solid var(--color-darkblue);
 
         }
     }
-
-     &__code-block {
-        width: 100%;
-        
-        // width: 10 0%;  
-        margin: 0 auto;
-        
-        
-    }
-
-    pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  text-align: justify;
+  
 }
-    
-
-   
-}
-
-.small {
-    font-size: 1.8rem;
-    display: inline-block;
-}
-
-h3 {
-    padding-bottom: 4px;
-    border-bottom: 1px solid black;
-}
-
 
 </style>

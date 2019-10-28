@@ -1,6 +1,5 @@
 <template>
-    <div class="client">
-        <div class="main-content-abs-center">
+    <div class="main text-center">
             <h1 class="header-font">Client Work</h1>
             <p class="client__paragraph mt-med">
                 I've been fortunate to work with some great businesses.<br>
@@ -8,7 +7,6 @@
                 <span class="client__paragraph--subtitle">Click on the Image to Visit the Site</span>
             </p>
             <app-client></app-client>
-        </div>
     </div>
 </template>
 

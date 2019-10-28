@@ -6,13 +6,13 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         mode: [
-            'app-welcome',  
+            'app-home',  
             'app-clients',
             'app-fun',
             'app-me',
             'app-contact'
         ],
-        activeComponent: 'app-welcome',
+        activeComponent: 'app-home',
         clientIndex: 0,
 
         clients: [

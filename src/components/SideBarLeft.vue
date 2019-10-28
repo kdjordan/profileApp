@@ -19,6 +19,9 @@
                     {{ this.getMessage  }}
                 </span> 
         </div>
+        <div>
+
+        </div>
     </div> <!-- end sidebar-left -->
 </template>
 
@@ -55,18 +58,19 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 7rem;
+    // flex: 0 0 9.2rem;
     
 
     &__menu-box {
         background: var(--color-darkblue);
-        height: 8rem;
+        height: 8.8rem;
         border-top-left-radius: 5px;
         cursor: pointer;
+        z-index: 10;
 
         &:hover {
             width: 200%;
-            height: 30%;
+            height: 60%;
             border-bottom-right-radius: 5px;
         }
         &:hover .ham-menu{
@@ -79,14 +83,15 @@ export default {
     }
   
     &__indicator {
-        flex-grow: 1;
         writing-mode: vertical-lr;
         text-orientation: left;
+        margin: 0 auto;
         
         &--type {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100%;
             letter-spacing: 1.8rem;
             font-size: 1.8rem;
             font-family: var(--logoPrimary);
@@ -98,9 +103,9 @@ export default {
 }
 
 .ham-menu {
-    position: relative;
-    top: 22px;
-    left: 22px;
+   position: relative;
+   top: 26%;
+   left: 31%;
     cursor: pointer;
     opacity: 1;
     transition: all .2s;
@@ -113,7 +118,6 @@ export default {
         margin: 6px 0;
         border-radius: 10px;
         
-
         &-1 {
             width: 1rem;
         }
@@ -124,6 +128,7 @@ export default {
         }
     }
 }
+
 .nav {
     list-style-type: none;
     text-transform: uppercase;

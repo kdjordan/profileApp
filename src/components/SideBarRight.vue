@@ -1,6 +1,6 @@
 <template>
    <div class="sidebar-right"> 
-        <div class="sidebar-right__logo-box" @click="setScreen('welcome')">
+        <div class="sidebar-right__logo-box" @click="setScreen('home')">
             <div class="sidebar-right__logo">
                 <span class="sidebar-right__logo--type">KJ</span>
             </div>
@@ -86,13 +86,13 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 7rem;;
+    // flex: 0 0 7rem;
     
     &__logo {
         font-family: var(--logoFont);
         background: var(--color-darkblue);
-        font-size: 3.4rem;
-        height: 8rem;
+        font-size: 3rem;
+        padding: 2rem;
         border-top-right-radius: 5px;
         display: flex;
         justify-content: center;
@@ -108,55 +108,55 @@ export default {
         }
     }
 
-        &__indicator {
+    &__indicator {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        cursor: pointer;
+
+        &--element {
+            height: .8rem;
+            width: 2.5rem;
+            display: block;
+            background: var(--color-lightgrey);
+            margin: 2.5rem 0; 
+            border-radius: 2px;
+            
+
+        }
+    }
+
+    &__button-box {
+        color: var(--color-lightgrey);
+        cursor: pointer;
+
+        &--top{
             display: flex;
-            flex-direction: column;
-            margin: auto;
-            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-darkblue);
+            margin-bottom: 2px;
+            height: 6.5rem;  
 
-            &--element {
-                height: .8rem;
-                width: 2.5rem;
-                display: block;
-                background: var(--color-lightgrey);
-                margin: 2.5rem 0; 
-                border-radius: 2px;
-                
-
+            &:hover {
+                background-color: lighten(#263440, 10%);
             }
         }
-
-        &__button-box {
-            color: var(--color-lightgrey);
-            cursor: pointer;
-
-            &--top{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: var(--color-darkblue);
-                margin-bottom: 2px;
-                height: 6.5rem;  
+        &--bottom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-darkblue);
+            border-bottom-right-radius: 5px;
+            height: 6.5rem; 
 
                 &:hover {
-                    background-color: lighten(#263440, 10%);
-                }
+                background-color: lighten(#263440, 10%);
             }
-            &--bottom{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: var(--color-darkblue);
-                border-bottom-right-radius: 5px;
-                height: 6.5rem; 
-
-                 &:hover {
-                    background-color: lighten(#263440, 10%);
-                }
-            }
-            &--icon {
-                margin-left: 3%;
-            }
-        }       
+        }
+        &--icon {
+            margin-left: 3%;
+        }
+    }       
 }
 </style>
