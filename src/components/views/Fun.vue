@@ -1,21 +1,21 @@
 <template>
+<div class="main__between">
     <div class="fun">
-            <p>Here are some side projects I've been working on lately.</p>
             <div class="fun__box">
-                <div class="fun__project">
-                    Mental Math
-                    <img src="'../../img/profile.jpg" alt="">
-                </div>
-                <div class="fun__project">
-                    Project 2
-                </div>
+                <app-project></app-project>
             </div>
-        </div>
     </div>
+
+</div>
 </template>
 
 <script>
+import Project from './Project.vue';
+
 export default {
+    components: {
+        appProject: Project
+    }
     
 }
 </script>
@@ -23,11 +23,13 @@ export default {
 <style lang="scss" scoped>
 
 .fun {
-    height: 100vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    flex: 0 0 1;
+
+    min-height: 80rem;
 
     &__box {
         display: flex;

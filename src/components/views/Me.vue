@@ -92,13 +92,13 @@ export default {
 
 
 .me {
-    height: 100vh;
-    flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    flex: 0 0 1;
+    min-height: 80rem;
+    
     &__code-block {
         text-align: left;
         margin-left: 15%;

@@ -18,7 +18,14 @@ export default {
 
 <style lang="scss" scoped>
 
-
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 1;
+    min-height: 80rem;
+}
 
 .large-logo {
     display: flex;

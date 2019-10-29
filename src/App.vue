@@ -56,6 +56,13 @@
     //font-style: italic;
     --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
 }   
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
 * {
     padding: 0;
     margin: 0;
@@ -74,21 +81,19 @@ body {
     font-weight: 400;
     line-height: 1.6;  
     font-size: 1.7rem;
-    height: 100vh;
-    // margin-top: 5vh;
-    
+    min-height: 100vh;
 }
 
 //layout classes
 .container {
     max-width: 120rem;
     background: var(--color-offwhite);  
+    margin: 8rem auto;
+    border-radius: 5px;
+
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto; 
-    border-radius: 5px;
-    flex: 1;
-    
 }
 
 .main {
@@ -97,8 +102,8 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--color-darkblue);
-    height: 100vh;
-    // margin: 5vh;
+    min-height: 50rem;
+    
     
     &__between {
       justify-content: space-around; 
@@ -114,10 +119,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 1.65rem;
- 
   color: var(--color-lightgrey);
-  // background: var(--color-darkblue);
-  
 }
 
 .app-button {
@@ -127,6 +129,13 @@ body {
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all .4s;
+
+    &:hover {
+      background: var(--color-lightgrey);
+      color: var(--color-darkblue);
+    }
 }
 //utility classes
 .u-active {

@@ -23,12 +23,13 @@ export default {
 <style lang="scss" scoped>
 
 .client{
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     flex: 0 0 1;
+    min-height: 80rem;
 
     &__paragraph {
         text-align: center;

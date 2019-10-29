@@ -52,6 +52,28 @@ export default new Vuex.Store({
                 link:'https://shop.3charm.com'
                 }
 
+            ],
+            projects: [
+                {
+                    name: 'Mental Math',
+                    description: 'This is a little Mental Math challenge game written in VueJS and using Vuex and some random number generating to provide an infinite number of challenges. You have 60 sec to answer as many addition and subtraction problems as you can.',
+                    link: '#',
+                    gitLink: '#'
+                },
+                {
+                    name: 'Advanced CSS Practice',
+                    description: 'This is a little practice site that I put together to work on some CSS animations. Also included are custom radio buttons and utilization of the checkbox hack to simulate click events using pure CSS. No JS is utilitzed on this page, which was fun little learning experience.',
+                    link: '#',
+                    gitLink: '#'
+
+                },
+                {
+                    name: 'Profile App',
+                    description: 'This is the VueJS app that you are visiting now. I thought it would be fun to create a profile site that is, in effect, a web app, utilizing Vuex and Flexbox. This is the result !',
+                    link: '#',
+                    gitLink: '#'
+
+                }
             ]
         
     },

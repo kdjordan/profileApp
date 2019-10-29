@@ -18,13 +18,12 @@ export default {
 <style lang="scss" scoped>
 
 .contact {
-
-    height: 100vh;
-    flex: 1;
-    display: flex;
+     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    flex: 0 0 1;
+    min-height: 80rem;
     
 
     &--outline {

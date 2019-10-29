@@ -1,7 +1,7 @@
 <template>
 <transition name="fade">
     <div class="inner-client">
-        <h2>{{ getClient.name }}</h2>
+        <h2 class="text-center">{{ getClient.name }}</h2>
         <a :href="getClient.link" target="_blank">
             <img :src="getImage" :if="show" class="mt-med img" @change="announce">
         </a>
@@ -44,11 +44,8 @@
 
 
 .inner-client {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     opacity: 1;
+    
 
     & h2 {
         margin-top: 20px;
