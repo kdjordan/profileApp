@@ -48,21 +48,13 @@
     --color-earth : #594B31; 
     --color-offwhite: #eef0fb;
 
-    --logoFont : arya-single, sans-serif;
-    --logoFont-slant : arya-double-slant, sans-serif;
+    
     --logoPrimary: 'Dosis', sans-serif;
 
     //font-weight: 400;
     //font-style: italic;
     --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
-}   
-
-$bp-largest: 75em;     // 1200px
-$bp-large: 68.75em;    // 1100px
-$bp-medium: 56.25em;   // 900px
-$bp-small: 37.5em;     // 600px
-$bp-smallest: 31.25em; // 500px
-
+}
 * {
     padding: 0;
     margin: 0;
@@ -83,7 +75,7 @@ body {
     font-size: 1.7rem;
     min-height: 100vh;
 }
-
+//moobile menu
 //layout classes
 .container {
     max-width: 120rem;
@@ -94,33 +86,38 @@ body {
     min-height: 80vh;
     display: flex;
     justify-content: space-between;
+
+     @media only screen and (max-width: 37.5em) {
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
     color: var(--color-darkblue);
-    min-height: 50rem;
+   
     
     
     &__between {
-      justify-content: space-around; 
-      flex: 1;
+      // justify-content: space-around; 
+      // min-height: 100vh;
     }
 }
 
 
-.header-font {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 1.65rem;
-  color: var(--color-lightgrey);
-}
+// .header-font {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-transform: uppercase;
+//   letter-spacing: 3px;
+//   padding: 1.65rem;
+//   color: var(--color-lightgrey);
+// }
 
 .app-button {
   padding: 1rem 2rem;
@@ -153,6 +150,9 @@ body {
 .mb-med {
   margin-bottom: 4rem !important;
 }
+.mb-small {
+  margin-bottom: 2rem !important;
+}
 .m-med {
   margin: 2rem 0;
 }
@@ -171,5 +171,14 @@ body {
   top: -15px;
   left: -15px;
 }
+
+.material-design-icon.icon-1x > .material-design-icon__svg {
+  height: 2.3em;
+  width: 2.3em;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
 
 </style>

@@ -1,12 +1,9 @@
 <template>
-<div class="main__between">
     <div class="fun">
             <div class="fun__box">
                 <app-project></app-project>
             </div>
     </div>
-
-</div>
 </template>
 
 <script>
@@ -27,15 +24,23 @@ export default {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 1;
+    flex: 2;
+    min-height: 80vh;
 
-    min-height: 80rem;
+    
+    @media only screen and (max-width: 37.5em) {
+        min-height: auto;
+        
+    }
+    
 
     &__box {
-        display: flex;
-        justify-items: space-between; 
-        align-items: center;
-        flex-direction: row;
+        // justify-content: space-between;
+        // background: red;
+        // display: flex;
+        // justify-items: space-between; 
+        // align-items: center;
+        // flex-direction: row;
         
     }
 }

@@ -1,13 +1,11 @@
 <template>
-    <div class="main">
         <div class="home">
             <h1>My Name is Kevin Jordan.</h1>
             <h3>I design and build things on the Internet.</h3>   
             <div class="large-logo mt-large">
-                <span class="large-logo__type">KJ</span>
+                <span class="large-logo__type">kj</span>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -23,8 +21,31 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 1;
-    min-height: 80rem;
+    min-height: 80vh;
+    flex: 2;
+
+    @media only screen and (max-width: 37.5em) {
+        min-height: auto; 
+    }
+
+    & h1 {
+        @media only screen and (max-width: 37.5em) {
+            text-align: center;
+            font-size: 2.8rem;
+        }
+    }
+
+    & h3 {
+         @media only screen and (max-width: 37.5em) {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        
+    }
 }
 
 .large-logo {
@@ -38,11 +59,12 @@ export default {
     align-items: center;
 
     &__type {
-        font-family: var(--logoFont-slant);
+        font-family: var(--logoPrimary);
         font-size: 10rem;
         color: var(--color-lightgrey);
-        margin-right: 6%;
-        margin-top: 6%;
+        text-transform: uppercase;
+        // margin-right: 6%;
+        // margin-top: 6%;
         
     }
 }

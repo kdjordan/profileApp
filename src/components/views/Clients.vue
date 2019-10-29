@@ -1,13 +1,11 @@
 <template>
-    <div class="main__between">
-        <div class="client">
-            <p class="client__paragraph mt-med">
-                I've been fortunate to work with some great businesses.<br>
-                Here's a few recent projects.<br>
-                <span class="client__paragraph--subtitle">Click on the Image to Visit the Site</span>
-            </p>
-            <app-client></app-client>
-        </div>
+    <div class="clients">
+        <p class="clients__paragraph">
+            I've been fortunate to work with some great businesses.<br>
+            Here's a few recent projects.<br>
+            <span class="clients__paragraph--subtitle">Click on the Image to Visit the Site</span>
+        </p>
+        <app-client></app-client>
     </div>
 </template>
 
@@ -22,21 +20,33 @@ export default {
 
 <style lang="scss" scoped>
 
-.client{
-    // height: 100vh;
+.clients {
     display: flex;
+    flex: 2;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 1;
-    min-height: 80rem;
+    min-height: 80vh;
+
+    @media only screen and (max-width: 37.5em) {
+       min-height: auto;         
+    }
 
     &__paragraph {
         text-align: center;
+
+        @media only screen and (max-width: 37.5em) {
+                font-size: 1.5rem;       
+            }
+
         &--subtitle {
             text-transform: uppercase;
             font-size: 1.2rem;
             font-style: italic;
+
+             @media only screen and (max-width: 37.5em) {
+                font-size: 1rem;       
+             } 
         }
     }
      &__paragraph:after {
@@ -46,6 +56,10 @@ export default {
         width: 50%; /* Change this to whatever width you want. */
         padding-top: 20px;
         border-bottom: 1px solid var(--color-darkblue); 
+
+        @media only screen and (max-width: 37.5em) {
+                padding-top: 10px;
+            }
     }
 }
 </style>

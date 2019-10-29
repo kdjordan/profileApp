@@ -1,50 +1,35 @@
 <template>
-<div class="main_between">
-
     <div class="project">
-        <h1>Some Recent Fun Projects</h1>
-        <div class="project__row">
+        <h1>Some Recent Side Projects</h1>
             <div class="project__col">
-                <div class="project__circle text-center">
-                    <span class="project__circle--text">{{ getProjects[0].name }}</span>
-                </div>
+                <h3 class="project__name">{{ getProjects[0].name }}</h3>
                 <p class="project__desc">{{ getProjects[0].description }}<br>
                 {{ getProjects[0].todo }}</p>
                 <div class="project__links">
                     <button class="app-button project__button">Live</button>
-                    <span><icon-git-circle class="icon-2x project-icon"></icon-git-circle></span>
+                    <icon-git-circle class="icon-1x"></icon-git-circle>
                 </div>
             </div>
             <div class="project__col">
-                <div class="project__circle text-center">
-                    <span class="project__circle--text">{{ getProjects[2].name }}</span>
-                </div>
+                    <h3 class="project__name">{{ getProjects[2].name }}</h3>
                 <p class="project__desc">{{ getProjects[2].description }}<br>
                 {{ getProjects[2].todo }}</p>
-                <div class="project__links text-center">
-                    <!-- <button class="app-button project__button">Live</button> -->
-                    <span><icon-git-circle class="icon-2x project-icon"></icon-git-circle></span>
+                <div class="project__links">
+                    <icon-git-circle class="icon-1x"></icon-git-circle>
                 </div>
             </div>
-        </div>
-        <div class="project__row">
             <div class="project__col">
-                <div class="project__circle text-center">
-                    <span class="project__circle--text">{{ getProjects[1].name }}</span>
-                </div>
+                    <h3 class="project__name">{{ getProjects[1].name }}</h3>
                 <p class="project__desc">{{ getProjects[1].description }}<br>
                 {{ getProjects[1].todo }}</p>
-                <div class="project__links text-center">
+                <div class="project__links">
                     <button class="app-button project__button">Live</button>
-                    <span><icon-git-circle class="icon-2x project-icon"></icon-git-circle></span>
+                    <icon-git-circle class="icon-1x"></icon-git-circle>
                 </div>
             </div>
-        </div>
-        
     </div>
-</div>
 </template>
-// mdi-github-circle
+
 <script>
 import { mapState } from 'vuex';
 import GithubCircleIcon from 'vue-material-design-icons/GithubCircle.vue';
@@ -68,7 +53,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
 
 .project {
@@ -76,67 +60,58 @@ export default {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 1;
+    flex-wrap: wrap;
+    min-height: 80vh;
+
+    @media only screen and (max-width: 37.5em) {
+        min-height: auto;
+    }
 
     & h1 {
         margin: .5rem 0;
-    }
-    
-    &__row {
-        margin-top: 5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+
+        @media only screen and (max-width: 37.5em) {
+            font-size: 2.0rem;
+        }
     }
 
+    &__name {
+        margin: .5rem 0;
+    }
+
+
     &__col {
-        width: 40%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        
+        margin: 2rem 0;
+
+        @media only screen and (max-width: 37.5em) {
+            width: 80%;
+            margin: 1.2rem auto;   
+        }   
     }
 
-    &__circle {
-        margin: 0 auto;
-        display: block;
-        background: var(--color-darkblue);
-        border-radius: 50%;
-        height: 10rem;
-        width: 10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    
-        
-
-        &--text {
-            color:var(--color-lightgrey);
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            padding: 2rem;
-            
-        }
-    }
 
     &__desc {
-        margin: 2rem 0;
+        margin-bottom: 2rem;
         font-size: 1.5rem;
+
+         @media only screen and (max-width: 37.5em) {
+             font-size: 1.2rem;
+        }
     }
 
     &__links {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;;
-
+        justify-content: space-around;
+        width: 50%;
     }
 
-    &__button {
-        margin-top: 5%;
-        margin-right: 4rem;
-    }
 }
 
 .project-icon {
@@ -145,6 +120,8 @@ export default {
     top: 0px;
     left: 0px;
     transition: all .4s;
+    height: 1rem;
+    width: 1rem;
 
     &:hover { 
         color: var(--color-lightgrey);

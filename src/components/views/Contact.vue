@@ -1,12 +1,10 @@
 <template>
-   <div class="main__between">
         <div class="contact">
             <h2 class="contact__h2 mb-med ">Let's Connect</h2>
             <div class="contact--outline">
                 <a href="mailto:k.dean.jordan@gmail.com">k.dean.jordan@gmail.com</a>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -18,12 +16,16 @@ export default {
 <style lang="scss" scoped>
 
 .contact {
-     display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 1;
-    min-height: 80rem;
+    min-height: 80vh;
+    flex: 2;
+
+    @media only screen and (max-width: 37.5em) {
+        min-height: auto; 
+    }
     
 
     &--outline {

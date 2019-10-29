@@ -87,9 +87,12 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     flex: 0 0 7rem;
+
+    @media only screen and (max-width: 37.5em) {
+    
+    }
     
     &__logo {
-        font-family: var(--logoFont);
         background: var(--color-darkblue);
         font-size: 3rem;
         padding: 2rem;
@@ -106,6 +109,11 @@ export default {
         &--type {
             color: var(--color-lightgrey);
         }
+        @media only screen and (max-width: 37.5em) {
+            display:none;
+            border-top-right-radius: 0px;
+    
+            }
     }
 
     &__indicator {
@@ -113,6 +121,13 @@ export default {
         flex-direction: column;
         margin: auto;
         cursor: pointer;
+
+        @media only screen and (max-width: 37.5em) {
+            flex-direction: row;
+            justify-content: space-between;
+        
+        }
+
 
         &--element {
             height: .8rem;
@@ -122,8 +137,13 @@ export default {
             margin: 2.5rem 0; 
             border-radius: 2px;
             transition: all .4s;
-            
 
+             @media only screen and (max-width: 37.5em) {
+                flex-direction: row;
+                margin: 2.5rem 1rem; 
+            }
+
+       
         }
     }
 
@@ -131,7 +151,7 @@ export default {
         color: var(--color-lightgrey);
         cursor: pointer;
 
-        &--top{
+        &--top {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -143,7 +163,7 @@ export default {
                 background-color: lighten(#263440, 10%);
             }
         }
-        &--bottom{
+        &--bottom {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -153,6 +173,10 @@ export default {
 
                 &:hover {
                 background-color: lighten(#263440, 10%);
+            }
+
+            @media only screen and (max-width: 37.5em) {
+                border-radius: 0px;
             }
         }
         &--icon {
