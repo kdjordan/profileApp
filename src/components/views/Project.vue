@@ -1,6 +1,5 @@
 <template>
     <div class="project">
-        <h1>Some Recent Side Projects</h1>
             <div class="project__col">
                 <h3 class="project__name">{{ getProjects[0].name }}</h3>
                 <p class="project__desc">{{ getProjects[0].description }}<br>
@@ -57,22 +56,13 @@ export default {
 
 .project {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 80vh;
-
-    @media only screen and (max-width: 37.5em) {
-        min-height: auto;
-    }
 
     & h1 {
         margin: .5rem 0;
-
-        @media only screen and (max-width: 37.5em) {
-            font-size: 2.0rem;
-        }
     }
 
     &__name {
@@ -81,17 +71,13 @@ export default {
 
 
     &__col {
-        width: 60%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin: 2rem 0;
 
-        @media only screen and (max-width: 37.5em) {
-            width: 80%;
-            margin: 1.2rem auto;   
-        }   
     }
 
 
@@ -99,9 +85,9 @@ export default {
         margin-bottom: 2rem;
         font-size: 1.5rem;
 
-         @media only screen and (max-width: 37.5em) {
-             font-size: 1.2rem;
-        }
+        @media(max-width:700px) {
+          font-size: 1.3rem;
+      }
     }
 
     &__links {
@@ -127,6 +113,22 @@ export default {
         color: var(--color-lightgrey);
     }
 
+}
+
+.app-button {
+  padding: 1rem 2rem;
+  background: var(--color-darkblue);
+  color: var(--color-lightgrey);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .4s;
+
+    &:hover {
+      background: var(--color-lightgrey);
+      color: var(--color-darkblue);
+    }
 }
 
 </style>

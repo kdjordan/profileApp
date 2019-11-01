@@ -51,9 +51,6 @@
     
     --logoPrimary: 'Dosis', sans-serif;
 
-    //font-weight: 400;
-    //font-style: italic;
-    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
 }
 * {
     padding: 0;
@@ -74,8 +71,9 @@ body {
     line-height: 1.6;  
     font-size: 1.7rem;
     min-height: 100vh;
+    min-width: 700px;
 }
-//moobile menu
+
 //layout classes
 .container {
     max-width: 120rem;
@@ -86,54 +84,9 @@ body {
     min-height: 80vh;
     display: flex;
     justify-content: space-between;
-
-     @media only screen and (max-width: 37.5em) {
-      margin: 0;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+    min-width: 700px;
 }
 
-.main {
-   
-    color: var(--color-darkblue);
-   
-    
-    
-    &__between {
-      // justify-content: space-around; 
-      // min-height: 100vh;
-    }
-}
-
-
-// .header-font {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-transform: uppercase;
-//   letter-spacing: 3px;
-//   padding: 1.65rem;
-//   color: var(--color-lightgrey);
-// }
-
-.app-button {
-  padding: 1rem 2rem;
-  background: var(--color-darkblue);
-  color: var(--color-lightgrey);
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all .4s;
-
-    &:hover {
-      background: var(--color-lightgrey);
-      color: var(--color-darkblue);
-    }
-}
 //utility classes
 .u-active {
   background: var(--color-darkblue) !important;
@@ -178,6 +131,7 @@ body {
   position: absolute;
   top: -10px;
   left: -10px;
+
 }
 
 

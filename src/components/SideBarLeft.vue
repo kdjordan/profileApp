@@ -60,36 +60,17 @@ export default {
     justify-content: space-between;
     flex: 0 0 7rem;
     
-    
-     @media only screen and (max-width: 37.5em) {
-         border-radius: 0;        
-    }
-
-
     &__menu-box {
         background: var(--color-darkblue);
         height: 8.8rem;
         border-top-left-radius: 5px;
         cursor: pointer;
         z-index: 10;
-        
-
-        @media only screen and (max-width: 37.5em) {
-            width: 20%;
-            border-radius: 0;
-        }
 
         &:hover {
             width: 200%;
             height: 35%;
             border-bottom-right-radius: 5px;
-
-        @media only screen and (max-width: 37.5em) {
-            width: 100%;
-            height: 110%
-        }
-           
-
         }
         &:hover .ham-menu{
             opacity: 0;
@@ -116,12 +97,6 @@ export default {
             text-transform: uppercase;
 
         }
-
-        @media only screen and (max-width: 37.5em) {
-            display:none;
-            }
-
-       
     }
 }
 
@@ -132,12 +107,6 @@ export default {
     cursor: pointer;
     opacity: 1;
     transition: all .2s;
-
-    @media only screen and (max-width: 37.5em) {
-        top: 41%;
-        left: 29%;
-    }
-
     &--el {
         display: block;
         height: .3rem;

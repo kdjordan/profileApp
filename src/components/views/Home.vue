@@ -23,29 +23,6 @@ export default {
     align-items: center;
     min-height: 80vh;
     flex: 2;
-
-    @media only screen and (max-width: 37.5em) {
-        min-height: auto; 
-    }
-
-    & h1 {
-        @media only screen and (max-width: 37.5em) {
-            text-align: center;
-            font-size: 2.8rem;
-        }
-    }
-
-    & h3 {
-         @media only screen and (max-width: 37.5em) {
-            text-align: center;
-            font-size: 1.8rem;
-        }
-
-    }
-
-    @media only screen and (max-width: 37.5em) {
-        
-    }
 }
 
 .large-logo {

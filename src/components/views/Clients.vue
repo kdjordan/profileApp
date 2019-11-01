@@ -28,25 +28,13 @@ export default {
     align-items: center;
     min-height: 80vh;
 
-    @media only screen and (max-width: 37.5em) {
-       min-height: auto;         
-    }
-
     &__paragraph {
         text-align: center;
-
-        @media only screen and (max-width: 37.5em) {
-                font-size: 1.5rem;       
-            }
 
         &--subtitle {
             text-transform: uppercase;
             font-size: 1.2rem;
             font-style: italic;
-
-             @media only screen and (max-width: 37.5em) {
-                font-size: 1rem;       
-             } 
         }
     }
      &__paragraph:after {
@@ -56,10 +44,6 @@ export default {
         width: 50%; /* Change this to whatever width you want. */
         padding-top: 20px;
         border-bottom: 1px solid var(--color-darkblue); 
-
-        @media only screen and (max-width: 37.5em) {
-                padding-top: 10px;
-            }
     }
 }
 </style>

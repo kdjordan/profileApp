@@ -48,38 +48,13 @@
 
     & h2 {
         margin-top: 20px;
-
-         @media only screen and (max-width: 37.5em) {
-            font-size: 2rem;
-        }
     }
-    
-
     &__details {
         margin-top: -8.5rem;
-        
-        @media only screen and (max-width: 37.5em) {
-            margin-top: -3rem;
-            font-size: 1.5rem;
-                
-            }
-
-        & p {
-             @media only screen and (max-width: 37.5em) {
-                margin-bottom: 1rem;
-                }
-        }
-
     }
 }
 
 .img {
     width: 100%;
-
-    @media only screen and (max-width: 37.5em) {
-        width: 80%;
-        margin: 0 10%;;
-    }
-    
 }
 </style>

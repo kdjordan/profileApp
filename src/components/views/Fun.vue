@@ -26,23 +26,6 @@ export default {
     align-items: center;
     flex: 2;
     min-height: 80vh;
-
-    
-    @media only screen and (max-width: 37.5em) {
-        min-height: auto;
-        
-    }
-    
-
-    &__box {
-        // justify-content: space-between;
-        // background: red;
-        // display: flex;
-        // justify-items: space-between; 
-        // align-items: center;
-        // flex-direction: row;
-        
-    }
 }
 
 </style>

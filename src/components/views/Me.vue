@@ -88,10 +88,7 @@ export default {
     display: flex;
     flex-direction: column;
     flex: 2;
-
-    @media only screen and (max-width: 37.5em) {
-       min-height: auto;         
-    }
+    min-height: 80vh;
    
     &__code-block {
         text-align: left;
@@ -101,30 +98,22 @@ export default {
     &__image {
         text-align: center;
             & img {
-            width: 15%;
+            width: 12%;
             border-radius: 50%;
             margin: 5% 0;;
             border: 6px solid var(--color-darkblue);
-
-             @media only screen and (max-width: 37.5em) {
-                border: 3px solid var(--color-darkblue);
-            }
         }
     }
 
     & table {
         margin: auto;
-        margin-bottom: 10%;
+        margin-bottom: 3rem;
     }
     & td {
         padding: .3rem;
     }
     & tbody {
         font-size: 1.4rem;
-
-        @media only screen and (max-width: 37.5em) {
-           font-size: 1.2rem;
-        }
     }
   
 }
