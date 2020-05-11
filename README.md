@@ -1,7 +1,8 @@
 # profile-app
 
 > A Vue.js project
->goofing around wiht vuejs
+>goofing around with vuejs
+>>a sample profile app
 
 ## Build Setup
 
