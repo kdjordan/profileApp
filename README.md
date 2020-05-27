@@ -1,20 +1,14 @@
-# profile-app
+# Profile Sandbox
 
-> A Vue.js project
->goofing around with vuejs
->>a sample profile app
+> VueJS App version of my profile
 
-## Build Setup
+## The Story
 
-``` bash
-# install dependencies
-npm install
+This version has been abandoned.  
+Originally I though that this might be a fun layout to make a more 'Appy' version of my profile site.
+After implementing most of the functionality, I decided I didn't like the layout.
 
-# serve with hot reload at localhost:8080
-npm run dev
+[Profile App](https://kevinjordan.dev/profileApp/)
 
-# build for production with minification
-npm run build
-```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
